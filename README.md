@@ -2,8 +2,6 @@
 
 This project demonstrates the use of Robust Principal Component Analysis (RPCA) for detecting and removing moving objects from a video sequence. The RPCA algorithm decomposes a video sequence into a low-rank background matrix and a sparse moving object matrix, allowing for the detection and removal of moving objects from the background.
 
-The implementation is in Python and uses the NumPy and OpenCV libraries. The main file is `main.py`, which contains the RPCA algorithm implementation and the code to read and write video files. The algorithm is applied to the input video file `shoppingmall.mat` in the directory `data`, and the output video files is written in folder `output`.
-
 ## Requirements
 
 - Python 3.x
