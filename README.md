@@ -1,4 +1,4 @@
-# Project Description: Robust PCA for Moving Object Detection in Video
+# Robust PCA for Moving Object Detection in Video
 
 This project demonstrates the use of Robust Principal Component Analysis (RPCA) for detecting and removing moving objects from a video sequence. The RPCA algorithm decomposes a video sequence into a low-rank background matrix and a sparse moving object matrix, allowing for the detection and removal of moving objects from the background.
 
