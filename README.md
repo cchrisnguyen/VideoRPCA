@@ -17,7 +17,9 @@ The implementation is in Python and uses the NumPy and OpenCV libraries. The mai
 
 2. Install the required packages using pip or conda:
 
+```
 pip install opencv-python numpy matplotlib
+```
 
 3. Download the input video file `shoppingmall.mat` from the [Google Drive](https://drive.google.com/file/d/1CuVAG3uWnwq6QmI3vARUizOF01Ubfz9k/view?usp=sharing) link. Place it in the `data` folder.
 
@@ -30,13 +32,15 @@ pip install opencv-python numpy matplotlib
 
 For example, to run the script with a regularization parameter of 0.1 and a rank of 20, use the following command:
 
+```
 python main.py --lambda 0.1 --rank 20
+```
 
 5. The resulting low-rank and sparse components will be saved as separate videos in the `output` folder.
 
 ## Credits
 
-This project is inspired by the paper "Robust Principal Component Analysis for Background Subtraction: Systematic Evaluation and Comparative Analysis" by Z. Zivkovic and F. van der Heijden (IEEE Transactions on Pattern Analysis and Machine Intelligence, 2006).
+This project is inspired by the paper "Robust Principal Component Analysis for Background Subtraction: Systematic Evaluation and Comparative Analysis" by Guyon, C., Bouwmans, T., & Zahzah, E. H. (Principal component analysis 10, 2012).
 
 ## License
 
