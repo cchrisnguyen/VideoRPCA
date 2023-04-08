@@ -37,7 +37,6 @@ def _sv_thresh(X, threshold, num_svalue):
     (U, s, V): tuple
         The singular value decomposition
     """
-    m, n = X.shape
     U, s, V = randomized_svd(X, num_svalue)
     greater_sv = np.count_nonzero(s > threshold)
     s = _soft_thresh(s, threshold)
@@ -134,9 +133,6 @@ def rpca(M, lam=None, mu=None, max_iter=1000, eps_primal=1e-7, eps_dual=1e-5,
     # This variable tried to predict how many singular values will be required.
     sv = initial_sv
 
-    # from torch.utils.tensorboard import SummaryWriter
-    # writer = SummaryWriter()
-
     for iter_ in range(max_iter):
         # See Section 4, paragraph "Order of Updating A and E" to see why
         # `S` iterate is computed before `L` ierate.
@@ -162,8 +158,6 @@ def rpca(M, lam=None, mu=None, max_iter=1000, eps_primal=1e-7, eps_dual=1e-5,
 
         if verbose:
             print(f'Iteration {iter_:4d}: Primal Error = {primal_error:10f} \tDual Error = {dual_error:10f}')
-            # writer.add_scalar('Primal Error', primal_error, global_step=iter_)
-            # writer.add_scalar('Dual Error', dual_error, global_step=iter_)
 
         if (iter_+1) % save_interval == 0:
             make_video(L, filename=f'./output/background_{iter_}.mp4')
