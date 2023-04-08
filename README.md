@@ -37,7 +37,7 @@ pip install opencv-python numpy scikit-learn tensorboard matplotlib
 - `--save_interval`:number of iterations for which the result will be saved (default: 10).
 
 
-For example, to run the script with a regularization parameter of 0.1 and the max iterations of 20, use the following command:
+For example, to run the script with a regularization parameter of 0.1 and the max iteration of 20, use the following command:
 
 ```
 python main.py --lambda 0.1 --max_iter 20
